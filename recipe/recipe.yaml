@@ -19,6 +19,7 @@ requirements:
   build:
     - cmake
     - ${{ compiler('cxx') }}
+    - ${{ stdlib("c") }}
     - if: unix
       then:
         - make
