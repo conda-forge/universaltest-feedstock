@@ -3,7 +3,7 @@ About universaltest-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/universaltest-feedstock/blob/main/LICENSE.txt)
 
-Home: https://www.tango-controls.org
+Home: https://www.tango-controls.org/
 
 Package license: GPL-3.0-or-later
 
@@ -17,7 +17,6 @@ A Tango device server able to create dynamic attributes of each Tango Type
 and generating associated expert dynamic attributes to be able to change
 the quality factor or behaviour of the other created attributes.
 Tango-Controls is a software toolkit for building control systems.
-
 
 Current build status
 ====================
