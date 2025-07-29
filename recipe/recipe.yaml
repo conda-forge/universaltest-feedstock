@@ -18,13 +18,11 @@ build:
 requirements:
   build:
     - cmake
-    - if: unix
-      then: make
     - ${{ compiler('cxx') }}
     - if: unix
-      then: libtool
-    - if: unix
-      then: pkg-config
+      then:
+        - make
+        - pkg-config
   host:
     - cppzmq
     - cpptango
@@ -33,9 +31,9 @@ requirements:
 tests:
   - script:
       - if: unix
-        then: UniversalTest --help 2>&1 | grep usage
+        then: UniversalTest --help 2>&1 | grep -i usage
       - if: win
-        then: UniversalTest.exe --help 2>&1 | findstr usage
+        then: UniversalTest.exe --help 2>&1 | findstr /i usage
 
 about:
   license: GPL-3.0-or-later
@@ -48,7 +46,7 @@ about:
     Tango-Controls is a software toolkit for building control systems.
   homepage: https://www.tango-controls.org
   repository: https://gitlab.com/tango-controls/device-servers/DeviceClasses/simulation/UniversalTest
-  documentation: https://tango-controls.readthedocs.io/en/latest/tutorials-and-howtos/how-tos/how-to-try-tango.html#play-with-tango-controls
+  documentation: https://tango-controls.readthedocs.io
 
 extra:
   recipe-maintainers:
