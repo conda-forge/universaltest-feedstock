@@ -1,0 +1,55 @@
+schema_version: 1
+
+context:
+  name: universaltest
+  version: 1.3
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://gitlab.com/tango-controls/device-servers/DeviceClasses/simulation/UniversalTest/-/releases/${{ version }}/downloads/UniversalTest-with-submodules-${{ version }}.tar.gz
+  sha256: 8e37cd5f3823ec733b1ba6db9a1b4d0b7a0a8fbe7bfb885279befed345fa662a
+
+build:
+  number: 3
+
+requirements:
+  build:
+    - cmake
+    - ${{ compiler('cxx') }}
+    - ${{ stdlib("c") }}
+    - if: unix
+      then:
+        - make
+        - pkg-config
+  host:
+    - cppzmq
+    - cpptango
+    - omniorb-libs
+
+tests:
+  - script:
+      - if: unix
+        then: UniversalTest --help 2>&1 | grep -i usage
+      - if: win
+        then: UniversalTest.exe --help 2>&1 | findstr /i usage
+
+about:
+  license: GPL-3.0-or-later
+  license_file: LICENSE
+  summary: UniversalTest Tango-Controls device server
+  description: |
+    A Tango device server able to create dynamic attributes of each Tango Type
+    and generating associated expert dynamic attributes to be able to change
+    the quality factor or behaviour of the other created attributes.
+    Tango-Controls is a software toolkit for building control systems.
+  homepage: https://www.tango-controls.org
+  repository: https://gitlab.com/tango-controls/device-servers/DeviceClasses/simulation/UniversalTest
+  documentation: https://tango-controls.readthedocs.io
+
+extra:
+  recipe-maintainers:
+    - beenje
+    - bourtemb

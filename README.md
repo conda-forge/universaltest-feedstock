@@ -3,7 +3,7 @@ About universaltest-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/universaltest-feedstock/blob/main/LICENSE.txt)
 
-Home: https://www.tango-controls.org
+Home: https://www.tango-controls.org/
 
 Package license: GPL-3.0-or-later
 
@@ -11,13 +11,12 @@ Summary: UniversalTest Tango-Controls device server
 
 Development: https://gitlab.com/tango-controls/device-servers/DeviceClasses/simulation/UniversalTest
 
-Documentation: https://tango-controls.readthedocs.io/en/latest/tutorials-and-howtos/how-tos/how-to-try-tango.html#play-with-tango-controls
+Documentation: https://tango-controls.readthedocs.io/
 
 A Tango device server able to create dynamic attributes of each Tango Type
 and generating associated expert dynamic attributes to be able to change
 the quality factor or behaviour of the other created attributes.
 Tango-Controls is a software toolkit for building control systems.
-
 
 Current build status
 ====================
@@ -37,6 +36,13 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
+              <td>linux_64_cpptango10.0</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21548&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/universaltest-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_cpptango10.0" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>linux_64_cpptango9.3</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21548&branchName=main">
@@ -55,6 +61,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21548&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/universaltest-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_cpptango9.5" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_cpptango10.0</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21548&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/universaltest-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_cpptango10.0" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -79,6 +92,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>linux_ppc64le_cpptango10.0</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21548&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/universaltest-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_cpptango10.0" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>linux_ppc64le_cpptango9.3</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21548&branchName=main">
@@ -100,6 +120,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>osx_64_cpptango10.0</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21548&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/universaltest-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_cpptango10.0" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>osx_64_cpptango9.4</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21548&branchName=main">
@@ -114,6 +141,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>osx_arm64_cpptango10.0</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21548&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/universaltest-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_cpptango10.0" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>osx_arm64_cpptango9.4</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21548&branchName=main">
@@ -125,6 +159,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21548&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/universaltest-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_cpptango9.5" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_cpptango10.0</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21548&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/universaltest-feedstock?branchName=main&jobName=win&configuration=win%20win_64_cpptango10.0" alt="variant">
                 </a>
               </td>
             </tr><tr>
