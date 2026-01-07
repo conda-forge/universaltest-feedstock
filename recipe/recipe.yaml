@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: universaltest
-  version: 1.3
+  version: "1.4"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://gitlab.com/tango-controls/device-servers/DeviceClasses/simulation/UniversalTest/-/releases/${{ version }}/downloads/UniversalTest-with-submodules-${{ version }}.tar.gz
-  sha256: 8e37cd5f3823ec733b1ba6db9a1b4d0b7a0a8fbe7bfb885279befed345fa662a
+  sha256: 4ee03a2c5288f86de5f5c5c9b9c36a1c7d53e81dcfc634af828114fb157c2914
 
 build:
-  number: 3
+  number: 0
 
 requirements:
   build:
